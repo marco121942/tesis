@@ -8,7 +8,7 @@ class Ruta{
 
 	public function ctrRuta(){
 
-		return "https://ecommerce-tesis.herokuapp.com/frontend/";
+		return "https://ecommerce-tesis.herokuapp.com/";
 	
 	}
 
@@ -18,7 +18,7 @@ class Ruta{
 
 	public function ctrRutaServidor(){
 
-		return "https://ecommerce-tesis.herokuapp.com/backend/";
+		return "https://backend-tesis.herokuapp.com/backend/";
 	
 	}
 
