@@ -18,7 +18,7 @@ class Ruta{
 
 	public function ctrRutaServidor(){
 
-		return "https://backend-tesis.herokuapp.com/backend/";
+		return "https://backend-tesis.herokuapp.com/";
 	
 	}
 
