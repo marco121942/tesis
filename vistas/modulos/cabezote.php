@@ -319,7 +319,7 @@ HEADER
 		CATEGORÍAS
 		======================================-->
 
-		<div class="col-xs-12 backColor" id="categorias">
+		<div class="col-xs-12 backColor backColor2" id="categorias">
 
 			<?php
 
@@ -330,7 +330,7 @@ HEADER
 
 				foreach ($categorias as $key => $value) {
 
-					echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12">
+					echo '<div class="col-lg-2 col-md-3 col-sm-4 col-xs-12 ">
 							
 							<h4>
 								<a href="'.$url.$value["ruta"].'" class="pixelCategorias" titulo="'.$value["categoria"].'">'.$value["categoria"].'</a>

@@ -129,11 +129,11 @@ FLECHAS
 }
 
 #slide #retroceder:hover, #slide #avanzar:hover{
-	background:#777;
+	background:#aa3344;
 }
 
 #slide #retroceder:active, #slide #avanzar:active{
-	background:#444;
+	background:#aa3344;
 }
 
 /*=============================================

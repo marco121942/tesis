@@ -211,17 +211,17 @@ for($i = 0; $i < count($titulosModulos); $i ++){
 
 											<small>
 						
-												<strong class="oferta">S/.'.$value["precio"].'</strong>
+												<strong class="oferta">S/'.$value["precio"].'.00</strong>
 
 											</small>
 
-											<small>$'.$value["precioOferta"].'</small>
+											<small >S/'.$value["precioOferta"].'.00</small>
 										
 										</h2>';
 
 								}else{
 
-									echo '<h2><small>S/.'.$value["precio"].'</small></h2>';
+									echo '<h2><small>S/'.$value["precio"].'.00</small></h2>';
 
 								}
 								
@@ -350,17 +350,17 @@ for($i = 0; $i < count($titulosModulos); $i ++){
 
 											<small>
 						
-												<strong class="oferta">S/.'.$value["precio"].'</strong>
+												<strong class="oferta">S/'.$value["precio"].'.00</strong>
 
 											</small>
 
-											<small>$'.$value["precioOferta"].'</small>
+											<small>S/'.$value["precioOferta"].'.00</small>
 										
 										</h2>';
 
 								}else{
 
-									echo '<h2><small>S/.'.$value["precio"].'</small></h2>';
+									echo '<h2><small>S/'.$value["precio"].'.00</small></h2>';
 
 								}
 								

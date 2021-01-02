@@ -25,7 +25,7 @@ FOOTER
 
 				foreach ($categorias as $key => $value) {
 
-					echo '<div class="col-lg-4 col-md-3 col-sm-4 col-xs-12">
+					echo '<div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
 
 						<h4><a href="'.$url.$value["ruta"].'" class="pixelCategorias" titulo="'.$value["categoria"].'">'.$value["categoria"].'</a></h4>
 
@@ -67,11 +67,11 @@ FOOTER
 				
 				<h5>
 					
-					<i class="fa fa-phone-square" aria-hidden="true"></i> 946866415
+					<i class="fa fa-phone-square" aria-hidden="true"></i> 983348765
 
 					<br><br>
 
-					<i class="fa fa-envelope" aria-hidden="true"></i> marco.sotomayor@tecsup.edu.pe
+					<i class="fa fa-envelope" aria-hidden="true"></i> monadas.glamour@gmail.com
 
 					<br><br>
 

@@ -14,7 +14,7 @@ BANNER
 
 .banner .textoDer{
 	top:50px; 
-	right:50px; 
+	right:60px; 
 	text-align:right;
 }
 
@@ -75,6 +75,10 @@ VITRINA PRODUCTOS CUADRÍCULA
 	transition: .3s all ease;
 	opacity:.8;
 	transform: scale(1.1,1.1);
+}
+
+.pixelProducto:hover{
+		color: #aa3344;
 }
 
 .productos ul li h4 small{

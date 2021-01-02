@@ -41,19 +41,14 @@ if($banner != null){
 
 						if($ofertas["oferta"] == 1){
 
-							echo '<div class="textoBanner textoIzq">
-
-								<h1 style="color:#fff" class="text-uppercase">'.$ofertas["categoria"].'</h1>
-
-							</div>
-
+							echo '
 							<div class="textoBanner textoDer">
 							
-								<h1 style="color:#fff">OFERTAS ESPECIALES</h1>';
+							<h1 style="color:#fff" class="text-uppercase">'.$ofertas["categoria"].'</h1>';
 
 								if($ofertas["precioOferta"] != 0){
 									
-									echo '<h2 style="color:#fff"><strong>Todos los productos a $/. '.$ofertas["precioOferta"].'</strong></h2>';
+									echo '<h2 style="color:#fff"><strong>Todos los productos a S/. '.$ofertas["precioOferta"].'.00</strong></h2>';
 
 								}
 
@@ -64,7 +59,7 @@ if($banner != null){
 
 							echo '<h3 class="col-md-0 col-sm-0 col-xs-0" style="color:#fff">
 								
-								La oferta termina en<br>
+							
 
 								<div class="countdown2" finOferta="'.$ofertas["finOferta"].'">
 
@@ -84,11 +79,11 @@ if($banner != null){
 
 							}else if($finOferta == 1){
 		
-								echo '<h3 class="col-lg-0" style="color:#fff">La oferta termina en '.$finOferta.' día</h3>';
+								echo '<h3 class="col-0" style="color:#fff">La oferta termina en '.$finOferta.' día</h3>';
 		
 							}else{
 		
-								echo '<h3 class="col-lg-0" style="color:#fff">La oferta termina en '.$finOferta.' días</h3>';
+								echo '<h3 class="col-0" style="color:#fff">La oferta termina en '.$finOferta.' días</h3>';
 		
 							}
 
@@ -112,19 +107,14 @@ if($banner != null){
 
 						if($ofertas[0]["oferta"] == 1){
 
-							echo '<div class="textoBanner textoIzq">
-
-								<h1 style="color:#fff" class="text-uppercase">'.$ofertas[0]["subcategoria"].'</h1>
-
-							</div>
-
+							echo '
 							<div class="textoBanner textoDer">
-							
-								<h1 style="color:#fff">OFERTAS ESPECIALES</h1>';
+								<h1 style="color:#fff" class="text-uppercase">'.$ofertas[0]["subcategoria"].'</h1>
+								';
 
 								if($ofertas[0]["precioOferta"] != 0){
 									
-									echo '<h2 style="color:#fff"><strong>Todos los productos a $/. '.$ofertas[0]["precioOferta"].'</strong></h2>';
+									echo '<h2 style="color:#fff"><strong>Todos los productos a S/. '.$ofertas[0]["precioOferta"].'.00</strong></h2>';
 
 								}
 
@@ -133,12 +123,9 @@ if($banner != null){
 									echo '<h2 style="color:#fff"><strong>Todos los productos con '.$ofertas[0]["descuentoOferta"].'% OFF</strong></h2>';
 								}
 
-							echo '<h3 class="col-md-0 col-sm-0 col-xs-0" style="color:#fff">
+							echo '<h3 class="col-0 col-md-0 col-sm-0 col-xs-0" style="color:#fff">
 								
-								La oferta termina en<br>
-
 								<div class="countdown2" finOferta="'.$ofertas[0]["finOferta"].'">
-
 
 							</h3>';
 
@@ -155,11 +142,11 @@ if($banner != null){
 
 							}else if($finOferta == 1){
 		
-								echo '<h3 class="col-lg-0" style="color:#fff">La oferta termina en '.$finOferta.' día</h3>';
+								echo '<h3 class="col-0" style="color:#fff">La oferta termina en '.$finOferta.' día</h3>';
 		
 							}else{
 		
-								echo '<h3 class="col-lg-0" style="color:#fff">La oferta termina en '.$finOferta.' días</h3>';
+								echo '<h3 class="col-0" style="color:#fff">La oferta termina en '.$finOferta.' días</h3>';
 		
 							}
 
@@ -265,7 +252,7 @@ LISTAR PRODUCTOS
 
 			<ul class="breadcrumb fondoBreadcrumb text-uppercase">
 				
-				<li><a href="<?php echo $url;  ?>">INICIO</a></li>
+				<li><a href="<?php echo $url;  ?>" style="color:rgb(170, 51, 68)">INICIO</a></li>
 				<li class="active pagActiva"><?php echo $rutas[0] ?></li>
 
 			</ul>
@@ -446,17 +433,17 @@ LISTAR PRODUCTOS
 
 											<small>
 						
-												<strong class="oferta">S/.'.$value["precio"].'</strong>
+												<strong class="oferta">S/'.$value["precio"].'.00</strong>
 
 											</small>
 
-											<small>S/.'.$value["precioOferta"].'</small>
+											<small>S/'.$value["precioOferta"].'.00</small>
 										
 										</h2>';
 
 								}else{
 
-									echo '<h2><small>S/.'.$value["precio"].'</small></h2>';
+									echo '<h2><small>S/'.$value["precio"].'.00</small></h2>';
 
 								}
 								
@@ -585,17 +572,17 @@ LISTAR PRODUCTOS
 
 											<small>
 						
-												<strong class="oferta">S/.'.$value["precio"].'</strong>
+												<strong class="oferta">S/'.$value["precio"].'.00</strong>
 
 											</small>
 
-											<small>$'.$value["precioOferta"].'</small>
+											<small>S/'.$value["precioOferta"].'.00</small>
 										
 										</h2>';
 
 								}else{
 
-									echo '<h2><small>S/.'.$value["precio"].'</small></h2>';
+									echo '<h2><small>S/'.$value["precio"].'.00</small></h2>';
 
 								}
 								

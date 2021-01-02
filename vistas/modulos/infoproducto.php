@@ -16,7 +16,7 @@ BREADCRUMB INFOPRODUCTOS
 			
 			<ul class="breadcrumb fondoBreadcrumb text-uppercase">
 				
-				<li><a href="<?php echo $url;  ?>">INICIO</a></li>
+				<li><a href="<?php echo $url;  ?>" style="color:rgb(170, 51, 68)">INICIO</a></li>
 				<li class="active pagActiva"><?php echo $rutas[0] ?></li>
 
 			</ul>
@@ -200,7 +200,7 @@ INFOPRODUCTOS
 
 							<p class="subTotal'.$infoproducto["id"].' subtotales">
 						
-								<strong>S/.<span>'.$infoproducto["precio"].'</span></strong>
+								<strong>S/.<span>'.$infoproducto["precio"].'.00</span></strong>
 
 							</p>
 
@@ -213,7 +213,7 @@ INFOPRODUCTOS
 
 							<p class="subTotal'.$infoproducto["id"].' subtotales">
 						
-								<strong>S/.<span>'.$infoproducto["precioOferta"].'</span></strong>
+								<strong>S/.<span>'.$infoproducto["precioOferta"].'.00</span></strong>
 
 							</p>
 
@@ -222,11 +222,7 @@ INFOPRODUCTOS
 
 						}
 
-					
-
-
-
-
+				
 					echo '</div>';
 
 					/*=============================================
@@ -316,7 +312,7 @@ INFOPRODUCTOS
 
 						if($infoproducto["oferta"] == 0){
 
-							echo '<h2 class="text-muted">S/.'.$infoproducto["precio"].'</h2>';
+							echo '<h2 class="text-muted">S/'.$infoproducto["precio"].'.00</h2>';
 
 						}else{
 
@@ -324,13 +320,13 @@ INFOPRODUCTOS
 
 								<span>
 								
-									<strong class="oferta">S/.'.$infoproducto["precio"].'</strong>
+									<strong class="oferta">S/'.$infoproducto["precio"].'.00</strong>
 
 								</span>
 
 								<span>
 									
-									S/.'.$infoproducto["precioOferta"].'
+									S/'.$infoproducto["precioOferta"].'.00
 
 								</span>
 
@@ -483,7 +479,7 @@ INFOPRODUCTOS
 
 							echo '<h4 class="col-md-12 col-sm-0 col-xs-0">
 
-								<hr>
+								
 
 								<span class="label label-default" style="font-weight:100">
 							
@@ -1196,7 +1192,7 @@ ARTÏCULOS RELACIONADOS
 
 						</figure>
 
-						'.$value["id"].'
+					
 
 						<h4>
 				
@@ -1244,17 +1240,17 @@ ARTÏCULOS RELACIONADOS
 
 										<small>
 					
-											<strong class="oferta">S/.'.$value["precio"].'</strong>
+											<strong class="oferta">S/'.$value["precio"].'.00</strong>
 
 										</small>
 
-										<small>$'.$value["precioOferta"].'</small>
+										<small>S/'.$value["precioOferta"].'.00</small>
 									
 									</h2>';
 
 							}else{
 
-								echo '<h2><small>S/.'.$value["precio"].'</small></h2>';
+								echo '<h2><small>S/'.$value["precio"].'.00</small></h2>';
 
 							}
 							

@@ -31,7 +31,7 @@ class AjaxCarrito{
 
 				$datos = array(
 						"divisa"=>$this->divisa,
-						"total"=>$this->total,
+						"total"=>$this->total ,
 						"impuesto"=>$this->impuesto,
 						"envio"=>$this->envio,
 						"subtotal"=>$this->subtotal,
@@ -98,11 +98,11 @@ if(isset($_POST["divisa"])){
 
 		$verificarProductos = ControladorProductos::ctrMostrarInfoProducto($item, $valor);
 
-		$divisa = file_get_contents("http://free.currconv.com/api/v7/convert?q=USD_".$_POST["divisa"]."&compact=ultra&apiKey=a01ebaf9a1c69eb4ff79");
+		$divisa = file_get_contents("http://free.currconv.com/api/v7/convert?q=PEN_".$_POST["divisa"]."&compact=ultra&apiKey=7b8d5756e64dfc4bf530");
 
 		$jsonDivisa = json_decode($divisa, true);
 
-		$conversion = number_format($jsonDivisa["USD_".$_POST["divisa"]],2);
+		$conversion = number_format($jsonDivisa["PEN_".$_POST["divisa"]],2);
 
 		if($verificarProductos["precioOferta"] == 0){
 

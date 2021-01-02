@@ -33,7 +33,7 @@ BREADCRUMB PERFIL
 			
 			<ul class="breadcrumb fondoBreadcrumb text-uppercase">
 				
-				<li><a href="<?php echo $url;  ?>">INICIO</a></li>
+				<li><a href="<?php echo $url;  ?> " style="color:rgb(170, 51, 68)">INICIO</a></li>
 				<li class="active pagActiva"><?php echo $rutas[0] ?></li>
 
 			</ul>
@@ -55,23 +55,23 @@ SECCIÓN PERFIL
 		<ul class="nav nav-tabs">
 		  
 	  		<li class="active">	  			
-			  	<a data-toggle="tab" href="#compras">
-			  	<i class="fa fa-list-ul"></i> MIS COMPRAS</a>
+			  	<a data-toggle="tab" href="#compras"style="color:rgb(170, 51, 68)">
+			  	<i class="fa fa-list-ul" style="color:rgb(170, 51, 68)"></i> MIS COMPRAS</a>
 	  		</li>
 
 	  		<li> 				
-		  		<a data-toggle="tab" href="#deseos">
-		  		<i class="fa fa-gift"></i> MI LISTA DE DESEOS</a>
+		  		<a data-toggle="tab" href="#deseos"style="color:rgb(170, 51, 68)">
+		  		<i class="fa fa-gift" style="color:rgb(170, 51, 68)"></i> MI LISTA DE DESEOS</a>
 	  		</li>
 
 	  		<li>				
-	  			<a data-toggle="tab" href="#perfil">
-	  			<i class="fa fa-user"></i> EDITAR PERFIL</a>
+	  			<a data-toggle="tab" href="#perfil" style="color:rgb(170, 51, 68)">
+	  			<i class="fa fa-user" style="color:rgb(170, 51, 68)"></i> EDITAR PERFIL</a>
 	  		</li>
 
 	  		<li>				
-		 	 	<a href="<?php echo $url; ?>ofertas">
-		 	 	<i class="fa fa-star"></i>	VER OFERTAS</a>
+		 	 	<a href="<?php echo $url; ?>ofertas" style="color:rgb(170, 51, 68)">
+		 	 	<i class="fa fa-star" style="color:rgb(170, 51, 68)"></i>	VER OFERTAS</a>
 	  		</li>
 		
 		</ul>
@@ -461,7 +461,7 @@ SECCIÓN PERFIL
 
 													<small>
 								
-														<strong class="oferta" style="font-size:12px">S/.'.$value2["precio"].'</strong>
+														<strong class="oferta" style="font-size:12px">S/.'.$value2["precio"].'.00</strong>
 
 													</small>
 
@@ -471,7 +471,7 @@ SECCIÓN PERFIL
 
 										}else{
 
-											echo '<h2 style="margin-top:-10px"><small>S/.'.$value2["precio"].'</small></h2>';
+											echo '<h2 style="margin-top:-10px"><small>S/.'.$value2["precio"].'.00</small></h2>';
 
 										}
 										
@@ -755,15 +755,15 @@ VENTANA MODAL PARA COMENTARIOS
 
 				<div class="form-group text-center">
 
-		       		<label class="radio-inline"><input type="radio" name="puntaje" value="0.5">0.5</label>
+		      
 					<label class="radio-inline"><input type="radio" name="puntaje" value="1.0">1.0</label>
-					<label class="radio-inline"><input type="radio" name="puntaje" value="1.5">1.5</label>
+				
 					<label class="radio-inline"><input type="radio" name="puntaje" value="2.0">2.0</label>
-					<label class="radio-inline"><input type="radio" name="puntaje" value="2.5">2.5</label>
+		
 					<label class="radio-inline"><input type="radio" name="puntaje" value="3.0">3.0</label>
-					<label class="radio-inline"><input type="radio" name="puntaje" value="3.5">3.5</label>
+				
 					<label class="radio-inline"><input type="radio" name="puntaje" value="4.0">4.0</label>
-					<label class="radio-inline"><input type="radio" name="puntaje" value="4.5">4.5</label>
+				
 					<label class="radio-inline"><input type="radio" name="puntaje" value="5.0" checked>5.0</label>
 
 				</div>

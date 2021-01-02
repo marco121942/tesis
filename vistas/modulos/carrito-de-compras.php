@@ -16,7 +16,7 @@ BREADCRUMB CARRITO DE COMPRAS
 			
 			<ul class="breadcrumb fondoBreadcrumb text-uppercase">
 				
-				<li><a href="<?php echo $url;  ?>">CARRITO DE COMPRAS</a></li>
+				<li><a href="<?php echo $url;  ?>" style="color:rgb(170, 51, 68)">CARRITO DE COMPRAS</a></li>
 				<li class="active pagActiva"><?php echo $rutas[0] ?></li>
 
 			</ul>
@@ -275,22 +275,24 @@ VENTANA MODAL PARA CHECKOUT
 								
 								<tr>
 									<td>Subtotal</td>	
-									<td><span class="cambioDivisa"></span> S/.<span class="valorSubtotal" valor="0">0</span></td>	
+									<td><span class="cambioDivisa"></span> <span class="valorSubtotal" valor="0">0</span></td>	
 								</tr>
 
 								<tr>
 									<td>Envío</td>	
-									<td><span class="cambioDivisa"></span> S/.<span class="valorTotalEnvio" valor="0">10.00</span></td>	
+									<td><span class="cambioDivisa"></span> <span class="valorTotalEnvio" valor="0">0</span></td>	
 								</tr>
 
-								<tr>
+
+								<tr  style="display: none;">
 									<td>Impuesto</td>	
-									<td><span class="cambioDivisa"></span> S/.<span class="valorTotalImpuesto" valor="0">0</span></td>	
+									<td><span class="cambioDivisa"></span> <span class="valorTotalImpuesto" valor="0">0</span></td>	
 								</tr>
+
 
 								<tr>
 									<td><strong>Total</strong></td>	
-									<td><strong><span class="cambioDivisa"></span> S/.<span class="valorTotalCompra" valor="0">0</span></strong></td>	
+									<td><strong><span class="cambioDivisa"></span> <span class="valorTotalCompra" valor="0">0</span></strong></td>	
 								</tr>
 
 							</tbody>	
@@ -301,7 +303,7 @@ VENTANA MODAL PARA CHECKOUT
 	
 						 <div class="divisa">
 
-						 	<select class="form-control" id="cambiarDivisa" name="divisa"style="visibility:hidden">
+						 	<select class="form-control" id="cambiarDivisa" name="divisa">
 						 		
 							
 

@@ -77,7 +77,7 @@ LISTAR PRODUCTOS
 
 			<ul class="breadcrumb fondoBreadcrumb text-uppercase">
 				
-				<li><a href="<?php echo $url;  ?>">INICIO</a></li>
+				<li><a href="<?php echo $url;  ?>" style="color:rgb(170, 51, 68)">INICIO</a></li>
 				<li class="active pagActiva"><?php echo $rutas[0] ?></li>
 
 			</ul>

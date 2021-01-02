@@ -53,10 +53,13 @@ class Paypal{
    				->setTax($datos["impuesto"])
     			->setSubtotal($datos["subtotal"]);
 
-    	#definimos el pago total con sus detalles
+		#definimos el pago total con sus detalles
+		
+		$total123= $datos["total"];
+	
     	$amount = new Amount();
 		$amount ->setCurrency($datos["divisa"])
-		    	->setTotal($datos["total"])
+		    	->setTotal($total123)
 		    	->setDetails($details);	
 
 		#Agregamos las características de la transacción
